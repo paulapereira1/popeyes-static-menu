@@ -6,3 +6,193 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  font-family: "chicken_sans_bold";
+  font-size: 18px;
+  font-weight: 100;
+  background-color: rgb(244, 241, 239);
+  margin: 0;
+}
+
+#navigationbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+
+#popeyeslogo {
+  object-fit: fill;
+  height: 1.5rem;
+  width: 50%;
+}
+#exploremenu {
+  text-transform: capitalize;
+  text-align: center;
+  background-color: rgb(254, 125, 9);
+  color: white;
+  width: 100%;
+  padding: 5rem;
+  z-index: 2;
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+
+#pagetext {
+  text-align: center;
+  margin: 1rem auto 0 auto;
+  display: grid;
+  place-items: center; /*only useful if used with display grid*/
+  margin-block-start: 0.8em;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0px;
+}
+#cardcontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: center;
+  margin: 2rem;
+}
+.previewCard {
+  background-color: white;
+  border-radius: 2%;
+  align-items: baseline;
+}
+.previewCard img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 2%;
+}
+.previewCard:hover {
+  cursor: pointer;
+}
+.cardContent {
+  margin: 0.8em;
+  height: 6rem;
+  font-style: normal;
+}
+
+footer {
+  box-sizing: border-box;
+  background-color: rgb(31, 31, 31);
+  color: rgb(255, 255, 255);
+  padding: 5rem;
+}
+.footerlinks {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+}
+.footerlinkssmall {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+}
+.socialiconswrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+}
+.socialiconswrapper a {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(193, 119, 77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialicons {
+  widows: 50%;
+  height: 50%;
+}
+
+.popeyeschickenlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: fill;
+  padding-bottom: 0;
+  height: 20rem;
+}
+
+h1 {
+  font-family: "chicken_sans_bold";
+  font-size: 80px;
+  text-align: justify;
+  font-weight: 100;
+  font-style: inherit;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "chicken_sans_bold";
+  font-size: 30px;
+  text-align: center;
+  font-weight: 100;
+  font-style: inherit;
+}
+h3 {
+  font-family: "chicken_sans_bold";
+  font-size: 20px;
+  font-weight: 100;
+  color: black;
+}
+h4 {
+  font-family: "chicken_sans_bold";
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 100;
+  color: rgb(193, 119, 77);
+  text-transform: capitalize;
+}
+h5 {
+  font-family: "chicken_sans_bold";
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 100;
+  color: white;
+  text-transform: capitalize;
+}
+h6 {
+  font-family: "chicken_sans_bold";
+  font-size: 13px;
+  text-align: justify;
+  font-weight: 100;
+  color: white;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 50rem) {
+  header {
+    font-size: 0.5rem;
+  }
+  .mobile {
+    display: none;
+  }
+}
