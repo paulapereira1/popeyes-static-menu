@@ -87,7 +87,7 @@ main {
 }
 .cardContent {
   margin: 0.8em;
-  height: 6rem;
+  height: 10rem;
   font-style: normal;
 }
 
@@ -95,7 +95,7 @@ footer {
   box-sizing: border-box;
   background-color: rgb(31, 31, 31);
   color: rgb(255, 255, 255);
-  padding: 5rem;
+  padding: 8rem;
 }
 .footerlinks {
   display: flex;
