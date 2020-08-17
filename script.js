@@ -1,6 +1,6 @@
 if (!localStorage.getItem('userId')) {
 localStorage.setItem('userId', String(Math.random()));
-
+};
 
 const handleClick = event => {
   console.log(event);
@@ -32,7 +32,4 @@ const handleClick = event => {
     }),
   });
 };
-
-
-
 window.addEventListener('click',handleClick);
