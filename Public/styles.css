@@ -75,16 +75,22 @@ main {
   background-color: white;
   border-radius: 2%;
   align-items: baseline;
+  border: 0.25rem solid white;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
 }
+
 .previewCard img {
   width: 100%;
   height: 15rem;
   object-fit: cover;
   border-radius: 2%;
 }
-.previewCard:hover {
+.previewCard:hover,
+.previewCard.selected img {
   cursor: pointer;
+  transform: scale(1.07);
 }
+
 .cardContent {
   margin: 0.8em;
   height: 6rem;
